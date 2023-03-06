@@ -1,0 +1,176 @@
+.menuWrapper {
+    width: 100%;
+    height: 60px;
+    background-color: #09073a;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-bottom: 0.5rem;
+    padding-right: 20px;
+
+    z-index: 100;
+
+    p {
+        padding: 0 !important;
+        margin: 0 !important;
+        display: block;
+    }
+
+    .menuBottomLine {
+        width: 100%;
+        color: white;
+        letter-spacing: 2px;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 600;
+    }
+
+    .menuButtons {
+        width: 100%;
+        height: 50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        a {
+            padding-top: 5px;
+            width: 100px;
+            display: block;
+            color: white;
+            font-size: 18px;
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 500;
+
+            cursor: pointer;
+
+            &:last-child {
+                width: 150px;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .topLogoName {
+        display: none;
+        text-align: center;
+        height: 40px;
+        width: 100%;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 500;
+        padding-top: 30px;
+        font-size: 20px;
+        color: white;
+    }
+
+
+    &.privacyStyles {
+        height: 90px;
+
+        .topLogoNamePrivacy {
+            text-align: center;
+            height: 20px;
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 500;
+            padding-top: 20px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .menuButtonsPrivacy {
+            margin: 0 auto;
+            width: 80%;
+            height: 40px;
+    
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            a {
+                margin-right: 60px;
+                color: white;
+                font-size: 18px;
+                font-family: 'Work Sans', sans-serif;
+                font-weight: 500;
+    
+                cursor: pointer;
+    
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .menuButtonsLeftRight {
+                width: 200px;
+                justify-content: flex-end;
+                align-items: center;
+            }
+        }
+    }
+
+    &.styles404 {
+        height: 90px;
+
+        .topLogoNamePrivacy {
+            margin: 0 auto;
+            width: 80%;
+            text-align: center;
+            height: 20px;
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 500;
+            padding-top: 20px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .menuButtonsPrivacy {
+            margin: 0 auto;
+            width: 80%;
+            height: 40px;
+    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            a {
+                color: white;
+                font-size: 18px;
+                font-family: 'Work Sans', sans-serif;
+                font-weight: 500;
+    
+                cursor: pointer;
+    
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .menuButtonsLeftRight {
+                width: 200px;
+                justify-content: flex-end;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .menuWrapper {
+        height: 130px;
+        padding-right: 0px;
+        
+        .topLogoName {
+            display: block;
+        }
+
+        .menuButtons {
+            justify-content: space-around;
+            
+            a {
+                text-align: center;
+            }
+        }
+    }
+}

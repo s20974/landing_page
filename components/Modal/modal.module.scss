@@ -1,0 +1,90 @@
+.dialog {
+    :global {
+        .MuiPaper-root {
+            background-color: #09073a !important;
+            color: white;
+
+            .MuiTypography-root {
+                font-family: 'JetBrainsMono-Regular';
+            }
+        }
+    }
+
+    .fieldsWrapper {
+        width: 500px;
+
+        :global {
+            .MuiFormControl-root {
+                width: 100%;
+                margin-bottom: 20px;
+
+                .MuiInputBase-root {
+                    border-radius: 3px;
+                    color: white;
+                    font-family: 'JetBrainsMono-Regular';
+                    transition: .3s;
+
+                    border: 1px solid white;
+
+                    &.Mui-error {
+                        border: 1px solid red !important;
+                        color: red;
+                    }
+                }
+
+                .MuiInputBase-input {
+                    &.Mui-focused {
+                        box-sizing: border-box;
+                        -moz-box-sizing: border-box;
+                        -webkit-box-sizing: border-box;
+                        border: 1px solid white;
+                    }
+                }
+
+                .MuiInputLabel-shrink {
+                    color: white;
+                    transform: translate(10px, 14px) scale(1);
+                    opacity: 0;
+                    color: #1E9992;
+                }
+
+                .MuiFormLabel-root {
+                    color: white;
+                    font-family: 'JetBrainsMono-Regular';
+
+                    &.Mui-error {
+                        color: red;
+                    }
+                }
+
+                .MuiOutlinedInput-notchedOutline {
+                    display: none;
+                }
+
+                .MuiFormHelperText-root {
+                    font-family: 'JetBrainsMono-Regular';
+                    margin-left: 0 !important;
+                }
+            }
+        }
+
+        .buttonWrapper {
+            width: 100%;
+            height: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .buttonhm{
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .fieldsWrapper {
+        width: 100% !important;
+    }
+}

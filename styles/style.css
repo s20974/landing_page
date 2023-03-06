@@ -1,0 +1,31 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+
+@font-face {
+    font-family: 'JetBrainsMono-Regular';
+    src: url('/fonts/JetBrainsMono-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'JetBrainsMono-Bold';
+    src: url('/fonts/JetBrainsMono-Bold.ttf');
+}
+
+body {
+    margin: 0;
+    background-color: #09073a;
+}
+
+.bannerSVG {
+    color: #7d9ddf;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+.logo {
+    color: white;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,30 @@
+.infoWrapper {
+    width: 850px;
+    height: auto;
+    margin: 120px auto;
+
+    color: white;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+
+    margin-bottom: 50px;
+
+    h1 {
+        font-family: 'JetBrainsMono-Regular';
+        font-weight: bold;
+    }
+
+    a {
+        font-weight: 600;
+        text-decoration: underline;
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .infoWrapper {
+        width: 80%;
+    }
+}
